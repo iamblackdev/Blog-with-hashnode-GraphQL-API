@@ -13,7 +13,7 @@ const PostCard = ({post, params}) => {
       <div className="blog-details">
         <p className="date"> <PostDate color="gray" dateAdded={post.dateAdded} /> </p>
 
-        <p className="title">{post.title}</p>
+        <h3 className="title">{post.title}</h3>
         <p className="brief">{ post.brief }</p>
         
         <div className="read-full">
