@@ -1,0 +1,56 @@
+.post-card{
+  background-color: white;
+  padding: 10px;
+  margin-top: 30px;
+  width: 40%;
+  border-radius: 5px;
+  box-shadow: 42px 41px 37px -55px rgba(0,0,0,0.75);
+}
+.post-card .blog-image{
+ height: fit-content;
+}
+.post-card .blog-image img{
+  width:  100%;
+  height: 200px;
+  object-fit: cover;
+}
+.post-card .blog-details .date{
+  font-size: 12px;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+.blog .blog-details .title{
+  color: black;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.post-card .blog-details .brief{
+  color: rgb(67, 66, 66);
+}
+.post-card .blog-details .read-full{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.post-card .blog-details .read-full a{
+  color: crimson;
+  text-decoration: none;
+}
+.post-card .read-full .fa-long-arrow-right{
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.post-card .fa-comment, .post-card .fa-thumbs-up{
+  margin-left: 5px;
+  cursor: pointer;
+}
+@media (max-width: 1199.98px) { 
+  .post-card{
+    width: 45%;
+  }
+}
+@media (max-width: 767.98px) { 
+  .post-card{
+    width: 100%;
+  }
+}

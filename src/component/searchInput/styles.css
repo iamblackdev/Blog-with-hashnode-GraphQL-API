@@ -1,0 +1,30 @@
+.search-input{
+  position: relative;
+  width: 100%;
+  margin: 20px 0px;
+}
+.search-input input:focus{
+  outline: 0;
+}
+.search-input input{
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 10px 10px 22px -12px rgba(0,0,0,0.75);
+}
+.search-input .btn{
+  position: absolute;
+  font-size: 22px;
+  border: none;
+  background-color: transparent;
+  color: gray;
+  right: 20px;
+  top: 12px;
+  cursor: pointer;
+}
+.search-input .spin-wrapper{
+  position: absolute;
+  right: 60px;
+  top: 13px;
+}

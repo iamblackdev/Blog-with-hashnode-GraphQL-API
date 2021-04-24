@@ -1,0 +1,9 @@
+.spin {
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: grey;
+  animation: spin 1s ease infinite;
+}
+@keyframes spin {
+  to { -webkit-transform: rotateZ(360deg);  }
+}

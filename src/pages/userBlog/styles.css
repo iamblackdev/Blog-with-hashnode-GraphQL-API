@@ -1,0 +1,24 @@
+
+.user .blog-posts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+.user .spin-wrapper{
+  width: fit-content;
+  margin: 20px auto;
+}
+.error-message{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+@media (max-width: 767.98px) { 
+  .error-message{
+    font-size: 20px;
+  }
+ }
