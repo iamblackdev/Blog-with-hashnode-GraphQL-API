@@ -1,0 +1,22 @@
+.not-found{
+  text-align: center;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.not-found .not-found-text{
+  font-size: 30px;
+  padding: 20px;
+  margin-right: 15px;
+  border-right: 1px solid black;
+}
+.not-found .return-text a{
+  color: black;
+}
+@media (max-width: 358px){
+  .not-found .not-found-text{
+    border-right: none;
+  }
+}

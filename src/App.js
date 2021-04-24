@@ -2,10 +2,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/home/home';
 import User from './pages/userBlog/userBlogs';
 import Blog from './pages/blogDetails/blogDetails';
+import Footer from './component/footer/footer'
 
 import './App.css';
 import Header from  './component/header/generalHeader'
 import { useState } from 'react';
+import NotFound from './pages/404Page';
 
 function App() {
 
@@ -29,9 +31,13 @@ function App() {
             <Route exact path="/:user/:slug" >
               <Blog changeHeader={changeHeader} />
             </Route>
+            <Route exact path="*" >
+              <NotFound />
+            </Route>
           </Switch>
         </div>
-    </div>
+        <Footer />
+      </div>
     </Router>
   );
 }

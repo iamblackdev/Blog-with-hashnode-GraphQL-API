@@ -1,0 +1,27 @@
+.footer{
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .footer-name{
+  font-size: 20px;
+  background-image: linear-gradient(to left, #1d4ed8, #10b981, rgba(29,78,216,.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer .fa{
+  font-size: 20px;
+  color: black;
+  margin-left:10px ;
+}
+
+@media(max-width: 416px){
+  .footer{
+    justify-content: center;
+    text-align: center;
+  }
+  .footer .fa{
+    margin-top: 20px;
+  }
+}
