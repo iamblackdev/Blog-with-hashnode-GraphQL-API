@@ -1,12 +1,18 @@
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import PostDate from '../date/date'
 import './styles.css'
 
 
 
-const PostCard = ({post, params}) => {
+const PostCard = ({ post, params }) => {
+  
+  const history = useHistory()
+  const handleClick = () => {
+    history.push(`/${params}/${post.slug}`)
+  }
+
   return (
-    <div className="post-card">
+    <div className="post-card" onClick={handleClick}>
       <div className="blog-image">
         {post.coverImage && <img src={post.coverImage} alt="cover image" />}
       </div>

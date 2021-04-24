@@ -11,7 +11,7 @@ const Search = ({ search, error, spin }) => {
     
     <div className="search-input">
       <form onSubmit={ (e) => search(e, searchValue)}>
-        <input type="text" value={searchValue} onChange={(e)=> setSearchValue(e.target.value)} placeholder="Search Username" />
+        <input type="text" value={searchValue} onChange={(e)=> setSearchValue(e.target.value)} placeholder="Search Username (Hashnode)" />
         <button className="btn">
           <i className="fa fa-search"></i>
         </button>
