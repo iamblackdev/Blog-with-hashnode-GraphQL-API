@@ -1,5 +1,4 @@
 
-
 .home .stories-feed{
   margin-top: 40px;
   width: 100%;
@@ -31,4 +30,11 @@
   align-items: flex-start;
   margin-bottom: 40px;
 }
-
+@media (max-width: 767.98px) { 
+  .home .stories-feed{
+   flex-direction: column;
+  }
+  .home select{
+    margin-top: 10px;
+  }
+ }
