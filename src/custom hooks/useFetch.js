@@ -78,7 +78,6 @@ const useFetch = (username, slug, filter) => {
       if (fetchedData.data.user) {
         if (fetchedData.data.post) {
           setDatas(fetchedData)
-          // localStorage.setItem('datas', JSON.stringify(fetchedData));
           setIsPending(true)
           setSpin(false)
           setError(null)
