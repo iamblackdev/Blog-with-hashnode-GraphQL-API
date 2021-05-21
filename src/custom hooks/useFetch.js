@@ -108,14 +108,9 @@ const useFetch = (username, slug, filter) => {
   useEffect(() => {
     // setIsPending(false)
     setSpin(true)
-    // if ( (localStorage.getItem('datas')) !== null && (username == JSON.parse(localStorage.getItem('datas')).data.user.username) && (JSON.parse(localStorage.getItem('datas')).data.post !== null ) && (slug == JSON.parse(localStorage.getItem('datas')).data.post.slug)) {
-    //   setDatas(JSON.parse(localStorage.getItem('datas')))
-    //   setIsPending(true)
-    //   setSpin(false)
-    //   setError(null)
-    // } else {
+   
       fetchData()
-    // }   
+   
   }, [username, slug, filter])
 
   return {datas, isPending, error, spin}
